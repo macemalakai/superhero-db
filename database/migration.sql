@@ -14,6 +14,15 @@ CREATE DATABASE superhero_db;
     photo VARCHAR(255)
   );
 
+  INSERT INTO users (
+  f_name,
+  l_name,
+  email,
+  password,
+  photo
+) VALUES
+('Troy David', 'Cook', 'troydavidcook@gmail.com', 'p@ssword', 'http://imgur.com/CMUXYaJ');
+
 
   DROP TABLE IF EXISTS characters CASCADE;
 
