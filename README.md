@@ -10,13 +10,25 @@
 
 ###### They can, of course, delete that superhero from this realm if they'd like.
 
-
-
-
-
-
-
-
-
+#### This schema will include four tables, one for users, characters, comics, and favorites. The user can choose a favorite for each category, and save them to there Superhero | db.
+---
 
 ![Imgur](http://i.imgur.com/yax9aj9.png)
+
+
+
+
+#### Ideas for wireframes include a more generic splash page with navigation bar, and some familiar buttons using Marvel colors and a comic books type style.
+---
+![Imgur](http://i.imgur.com/sWc8nc5.png)
+
+#### There will be, of course, a page dedicated each for signing up and logging in. Each will look essentially the same, like the image below.
+---
+
+![Imgur](http://i.imgur.com/w3Dyub9.png)
+
+
+#### Other pages for characters, comics, and favorites will show pages with images and a comic book looking division holding information with pertinent information.
+---
+
+![Imgur](http://i.imgur.com/Hcihyh4.png)
