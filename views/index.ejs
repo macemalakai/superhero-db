@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="../public/css/style.css" />
+</head>
+<body>
+
+  <!-- Sign up form-->
+
+  <div class="container small-container margin-top-20">
+      <h1 class="text-center">Sign Up!<h1>
+
+      <div class="well">
+          <form method="POST" action="/users/login">
+              <div>
+                  <input name="user[email]" type="email" placeholder="Email" class="form-control" />
+              </div>
+              <div class="margin-top-20">
+                  <input name="user[password]" type="password" placeholder="Password" class="form-control" />
+              </div>
+              <div class="margin-top-20 text-center">
+                  <button type="submit" class="btn btn-primary">Sign Up</button>
+              </div>
+          </form>
+      </div>
+  </div>
+    <!-- End of sign up form -->
+
+
+      <!-- Beginning of login form%> -->
+    <div class="container small-container margin-top-20">
+        <h1 class="text-center">Login<h1>
+
+        <div class="well">
+            <form method="POST" action="/users/login">
+                <div>
+                    <input name="user[email]" type="email" placeholder="Email" class="form-control" />
+                </div>
+                <div class="margin-top-20">
+                    <input name="user[password]" type="password" placeholder="Password" class="form-control" />
+                </div>
+                <div class="margin-top-20 text-center">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- End of login form-->
+
+</body>
+</html>
