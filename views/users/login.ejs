@@ -3,20 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  	<script type="text/javascript" src="js/script.js"></script>
+  <!--End of scripts-->
+
+  	<link rel="stylesheet" href="../css/style.css"/>
   </head>
   <body>
 
-    <form method="POST" action="/users/login">
-      <div>
-        <input name="user[email]" type="email" placeholder="Email" class="form-control" />
-      </div>
-      <div class="margin-top-20">
-        <input name="user[password]" type="password" placeholder="Password" class="form-control" />
-      </div>
-      <div class="margin-top-20 text-center">
-        <button type="submit" class="btn btn-primary">Login</button>
-      </div>
-    </form>
+
+      <div class="container small-container margin-top-20">
+          <div class="well">
+            <form method="GET" action="heroes/hero">
+              <div>
+                <input name="user[email]" type="email" placeholder="Email" class="form-control" />
+              </div>
+              <div class="margin-top-20">
+                <input name="user[password]" type="password" placeholder="Password" class="form-control" />
+              </div>
+              <div class="margin-top-20 text-center">
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
 
 
   </body>

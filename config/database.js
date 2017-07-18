@@ -1,4 +1,6 @@
-  
+
+
+  // This packages only allows us to use sql commands in our models.
   const pgp = require("pg-promise")({});
 
   const config = {

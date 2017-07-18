@@ -1,14 +1,13 @@
   const express = require("express");
   const app = express();
-
+  const path = require('path')
   require("dotenv").config();
 
   app.set("view engine", "ejs");
 
-  app.use(express.static("./public"));
+  app.use(express.static(path.join(__dirname, "public")));
 
   const session = require("express-session");
-  const MongoStore = require("connect-mongo")(session);
 
 //   app.use(session({
 //     secret: process.env.SECRET_KEY,

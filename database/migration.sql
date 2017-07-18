@@ -1,7 +1,7 @@
 
 DROP DATABASE IF EXISTS superhero_db CASCADE;
 CREATE DATABASE superhero_db;
-
+DROP TABLE IF EXISTS  comics CASCADE;
 
   DROP TABLE IF EXISTS  users CASCADE;
 
@@ -24,9 +24,9 @@ CREATE DATABASE superhero_db;
 ('Troy David', 'Cook', 'troydavidcook@gmail.com', 'p@ssword', 'http://imgur.com/CMUXYaJ');
 
 
-  DROP TABLE IF EXISTS characters CASCADE;
+  DROP TABLE IF EXISTS heroes CASCADE;
 
-  CREATE TABLE characters (
+  CREATE TABLE heroes (
     id BIGSERIAL PRIMARY KEY,
     name VARCHAR(100),
     description VARCHAR(255),
@@ -35,18 +35,13 @@ CREATE DATABASE superhero_db;
     user_id INT REFERENCES users(id)
   );
 
-  DROP TABLE IF EXISTS  comics CASCADE;
-
-  CREATE TABLE comics (
-    id BIGSERIAL PRIMARY KEY,
-    title VARCHAR(25) NOT NULL,
-    description VARCHAR(25)  NOT NULL,
-    format VARCHAR(255) NOT NULL,
-    series VARCHAR(255),
-    thumbnail VARCHAR(255) NOT NULL,
-    creators VARCHAR(255) NOT NULL,
-    character_id INT REFERENCES characters(id)
-  );
+  INSERT INTO heroes (
+  name,
+  description,
+  thumbnail,
+  comics
+) VALUES
+('Cyclops', 'This mutant is one of the originals and can shoot lasers out of his freaking eyes!! Laser beams!!!!', '', '');
 
 
   DROP TABLE IF EXISTS favorites CASCADE;
@@ -54,6 +49,6 @@ CREATE DATABASE superhero_db;
   CREATE TABLE favorites (
     id BIGSERIAL PRIMARY KEY,
     user_id INT REFERENCES users(id),
-    character_id INT REFERENCES characters(id),
+    character_id INT REFERENCES heroes(id),
     comic_id INT REFERENCES comics(id)
 );

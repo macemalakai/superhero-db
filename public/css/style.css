@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Comic-Book';
+  src: url('webfont.eot');
+}
+
+body {
+  text-align: center;
+  background-color: ;
+  max-width: 1024px;
+  max-height: 2000;px
+}
+
+h1 {
+  color: rgb(226,54,54);
+  font-family: 'Comic-Book';
+}
+
+.user-buttons {
+  flex: 1;
+  color: white;
+  text-align: center;
+  width: 90px;
+  height: 30px;
+  margin-top: 30%;
+  background-color: rgb(226,54,54);
+  border-radius: 3px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.button-wrapper {
+  width: 500px;
+  height: 100px;
+}
+
+img {
+  height: 400px;
+  width: 400px;
+  border-radius: 3px;
+  box-shadow: 1px 1px grey;
+}
