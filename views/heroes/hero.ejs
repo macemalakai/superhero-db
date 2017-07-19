@@ -14,22 +14,35 @@
     <script type="text/javascript" src="js/script.js"></script>
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
   </head>
 
   <body>
 
-    <div class="well">
+    <nav>
+    <div class="nav-wrapper">
+      <a class="nav-buttons" href="index">Sign Out</a>
+      <a href="/" class="logo">Superhero | db</a>
+    </div>
+  </nav>
+
+
+    <div class="search-hero-form">
 
       <div>
         <input type="text" id="heroes" placeholder="Hero's Name" class="form-control" />
       </div>
       <div class="">
-        <button id="hero-button" type="submit" class="btn btn-primary">Search Super Hero</button>
+        <button id="hero-button" type="submit" class="waves-effect waves-red btn">Search Super Hero</button>
+      </div>
+
+      <div class="">
+        <button id="hero-button" type="submit" class="waves-effect waves-red btn">Favorite This Hero</button>
       </div>
 
       <div class="sidebar">
         <ul>
-    
+
         </ul>
       </div>
 

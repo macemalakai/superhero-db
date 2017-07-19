@@ -11,27 +11,34 @@
   crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 <!--End of scripts-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 	<link rel="stylesheet" href="css/style.css" />
 
 </head>
 	<body>
-	<div class="button-wrapper">
 
-		<div class="splash-buttons">
-			<form method="GET" action="users/signup">
+
+		<nav>
+	    <div class="nav-wrapper">
+				<a class="nav-buttons" href="users/signup">Sign Up</a>
+	      <a class="nav-buttons" href="users/login">Log In</a>
+	    	<a href="/" class="logo">Superhero | db</a>
+		  </div>
+
+
+			<div class="app-intro">
+				<h5> Superhero | db:</h3>
+					<p>A place to search for, and save your favorite Marvel superheroes.</p>
+			</div>
+
+			<%# <form method="GET" action="users/signup">
 				<div class="margin-top-20 text-center">
 					<button type="submit" class="user-buttons">Sign Up</button>
 				</div>
-			</form>
+			</form>%>
 
-				<form method="GET" action="users/login">
-					<div class="margin-top-20 text-center">
-						<button type="submit" class="user-buttons">Login</button>
-					</div>
-				</form>
-			</div>
+  	</nav>
 
-		</div>
 
 	</body>
 </html>

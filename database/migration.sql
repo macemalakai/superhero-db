@@ -11,7 +11,8 @@ DROP TABLE IF EXISTS  comics CASCADE;
     l_name VARCHAR(40)  NOT NULL,
     email VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL,
-    photo VARCHAR(255)
+    photo VARCHAR(255),
+    CONSTRAINT email_unique UNIQUE(email)
   );
 
   INSERT INTO users (

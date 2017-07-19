@@ -32,12 +32,12 @@
     require("./resources/heroes")
   );
 
-  router.use(
-    "/",
-    (req, res) => {
-      res.render("index")
-    }
-  );
+  // router.use(
+  //   "/",
+  //   (req, res) => {
+  //     res.render("index")
+  //   }
+  // );
 
 
 

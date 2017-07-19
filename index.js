@@ -23,6 +23,10 @@
   app.use(bodyParser.urlencoded({extended: true}));
   app.use(bodyParser.json());
 
+  app.get("/", (req, res) => {
+    res.render("index");
+  });
+
   app.use(require("./resources"));
 
 

@@ -1,4 +1,4 @@
-const User = require('./../../models/user')
+const User = require('../../models/user');
 const controller = {}
 
 
@@ -23,13 +23,25 @@ controller.login = (req, res) => {
   res.render('users/login')
 }
 
+controller.process_login = (req, res) => {
+  //Authentication logic would go here
+
+  res.redirect('/heroes');
+}
+
 controller.signup = (req, res) => {
   res.render('users/signup')
 }
 
 controller.new = (req, res) => {
-  User.create(req.body.user)
-  res.redirect('/users/login')
+  User
+  .create(req.body.user)
+  .then(() => {
+    res.redirect('/users/login');
+  })
+  .catch((err) => {
+    res.json(err);
+  });
 }
 
 module.exports = controller

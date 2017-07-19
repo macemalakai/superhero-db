@@ -4,7 +4,8 @@ const controller = require('./controller');
 
 var app = express();
 
-router.get('/login', controller.login)
+router.get('/login', controller.login);
+router.post('/login', controller.process_login);
 
 router.route('/signup')
   .get(controller.signup)

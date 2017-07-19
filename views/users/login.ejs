@@ -11,23 +11,29 @@
   <!--End of scripts-->
 
   	<link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
   </head>
   <body>
 
+    <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="logo">Superhero | db</a>
+    </div>
+  </nav>
 
-      <div class="container small-container margin-top-20">
-          <div class="well">
-            <form method="GET" action="heroes/hero">
-              <div>
-                <input name="user[email]" type="email" placeholder="Email" class="form-control" />
-              </div>
-              <div class="margin-top-20">
-                <input name="user[password]" type="password" placeholder="Password" class="form-control" />
-              </div>
-              <div class="margin-top-20 text-center">
-                <button type="submit" class="btn btn-primary">Login</button>
-              </form>
 
+    <div class="log-in-form">
+      <form method="POST" action="/users/login">
+        <div>
+          <input name="user[email]" type="email" placeholder="Email" class="form-control" />
+        </div>
+        <div class="">
+          <input name="user[password]" type="password" placeholder="Password" class="form-control" />
+        </div>
+        <div class="user-buttons">
+          <button type="submit" class="">Login</button>
+        </form>
+      </div>
 
   </body>
 </html>

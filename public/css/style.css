@@ -1,41 +1,113 @@
 @font-face {
-  font-family: 'Comic-Book';
-  src: url('webfont.eot');
-}
+    font-family: 'the-avengers';
+    src: url('../../vendor/The Avengers.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
 body {
+  background: url("http://i.imgur.com/muQ9b2O.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   text-align: center;
-  background-color: ;
-  max-width: 1024px;
+  max-width: 100%px;
   max-height: 2000;px
 }
 
 h1 {
   color: rgb(226,54,54);
-  font-family: 'Comic-Book';
+  font-family: 'the-avengers';
+  font-size: 8px;
 }
 
+button {
+  background-color: rgb(226,54,54);
+}
+
+.nav-wrapper {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0, 2px, 0, 2px, rgb(226,54,54);
+}
+
+.app-intro {
+  color: rgb(226,54,54);
+  text-align: left;
+  margin-top: 115px;
+  margin-left: 435px;
+}
+
+.logo {
+  color: rgb(226,54,54);
+  font-size: 15px;
+  text-align: center;
+  position: absolute;
+}
+
+.nav-buttons {
+  float: left;
+  color: rgb(226,54,54);
+  margin-left: 20px;
+}
 .user-buttons {
-  flex: 1;
   color: white;
   text-align: center;
-  width: 90px;
+  width: 120px;
   height: 30px;
   margin-top: 30%;
   background-color: rgb(226,54,54);
   border-radius: 3px;
-  overflow: hidden;
-  justify-content: center;
 }
 
-.button-wrapper {
-  width: 500px;
-  height: 100px;
+.here-button {
+  background-color: rgb(226,54,54);
 }
+
+/*.button-wrapper {
+  display: block;
+  /*width: 500px;
+  height: 100px;
+}*/
+
+
+/*.sign-button {
+  position: relative;
+  overflow: hidden;
+  box-sizing: content-box;
+  height: 20px;
+  width: 30px;
+}*/
+
+.sign-up-form {
+  text-align: center;
+  margin: 100px auto;
+  flex-grow: 1;
+  width: 25%;
+  height: 15px;
+}
+
+.log-in-form {
+  text-align: center;
+  margin: 100px auto;
+  flex-grow: 1;
+  width: 25%;
+  height: 15px;
+}
+
+.search-hero-form {
+  text-align: center;
+    margin: 100px auto;
+    flex-grow: 1;
+    width: 25%;
+    height: 15px;
+}
+
 
 img {
-  height: 400px;
-  width: 400px;
+  height: 250px;
+  width: 250px;
   border-radius: 3px;
   box-shadow: 1px 1px grey;
 }

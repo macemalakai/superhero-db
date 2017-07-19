@@ -11,13 +11,26 @@
   <!--End of scripts-->
 
   	<link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
   </head>
   <body>
+
+    <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="logo">Superhero | db</a>
+      <!--<ul class="left hide-on-med-and-down">
+        <a href="users/signup" class="waves-effect waves-light btn">button</a>
+        <li class="active"><a href="users/login">Log In</a></li>
+      </ul>-->
+    </div>
+  </nav>
+
+
 
       <div class="sign-up-form">
         <form method="POST" action="/users/signup">
           <div>
-            <input name="user[f_name]" type="text" placeholder="First Name" class="form-control" />
+            <input name="user[f_name]" type="text" placeholder="First Name" class="form-design" />
           </div>
           <div class="">
             <input name="user[l_name]" type="text" placeholder="Last Name" class="form-design"/>
@@ -32,7 +45,7 @@
             <input name="user[photo]" type="text" placeholder="Profile Photo" class="form-design"/>
           </div>
           <div class="">
-            <button type="submit" class="user-buttons">Sign Up Bub</button>
+            <button type="submit" class="user-buttons">Sign on up, Bub</button>
           </div>
       </form>
     <div>
