@@ -11,19 +11,28 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  /*background-attachment: fixed;*/
   text-align: center;
-  max-width: 100%px;
+  max-width: 100%;
   max-height: 2000;px
 }
 
 h1 {
+  font-size: 8px;
   color: rgb(226,54,54);
   font-family: 'the-avengers';
-  font-size: 8px;
 }
 
 button {
-  background-color: rgb(226,54,54);
+color: white;
+background-color: rgb(226,54,54);
+border-radius: 3px;
+margin-top: 48px;
+border-color: white;
+}
+
+.hero-name {
+  font-size: 28px;
 }
 
 .nav-wrapper {
@@ -61,8 +70,27 @@ button {
   border-radius: 3px;
 }
 
-.here-button {
+.search-button {
+  color: white;
   background-color: rgb(226,54,54);
+  border-radius: 3px;
+  margin-top: 48px;
+  border-color: white;
+}
+
+.favorite-button {
+  color: white;
+  background-color: rgb(226,54,54);
+  border-radius: 3px;
+  margin-top: 15px;
+  border-color: white;
+}
+
+.favorites-div {
+  border-style: groove;
+  height: 300px;
+  width: 300px;
+  float:right;
 }
 
 /*.button-wrapper {

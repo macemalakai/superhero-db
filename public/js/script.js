@@ -17,7 +17,7 @@ const getData = (name) => {
     console.log(data)
     console.log($('.sidebar').children());
     $('.sidebar').children().each(function(){$(this).remove()})
-    $('.sidebar').append($('<h1>').text(data.data[0].name))
+    $('.sidebar').append($('<h1 class="hero-name">').text(data.data[0].name))
     .append($('<img>').attr('src', data.data[0].thumbnail.path + "." + data.data[0].thumbnail.extension ))
 })
 .catch((err) => {
@@ -33,7 +33,7 @@ const getData = (name) => {
 // Document Ready
 $(() => {
 
-$('#hero-button').on('click', function(){
+$('.search-button').on('click', function(){
   var heroName = $('#heroes').val()
   getData(heroName);
 
