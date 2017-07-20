@@ -10,9 +10,9 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: 80%;
   /*background-attachment: fixed;*/
-  text-align: center;
+  background-position: left bottom;
   max-width: 100%;
   max-height: 2000;px
 }
@@ -33,6 +33,13 @@ border-color: white;
 
 .hero-name {
   font-size: 28px;
+}
+
+.hero-img {
+  height: 120px;
+  width: 120px;
+  border-radius: 3px;
+  box-shadow: 1px 1px grey;
 }
 
 .nav-wrapper {
@@ -70,12 +77,44 @@ border-color: white;
   border-radius: 3px;
 }
 
+.sign-up-form {
+  text-align: center;
+  margin: 100px auto;
+  flex-grow: 1;
+  width: 25%;
+  height: 15px;
+}
+
+.log-in-form {
+  text-align: center;
+  margin: 100px auto;
+  flex-grow: 1;
+  width: 25%;
+  height: 15px;
+}
+
 .search-button {
   color: white;
   background-color: rgb(226,54,54);
   border-radius: 3px;
-  margin-top: 48px;
+  margin-top: 28px;
   border-color: white;
+  border: none;
+  border-radius: 2px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+  color: white;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-style:;
+  font-weight: 500;
+  padding: 3px 5px;
+  :hover {
+    background-color: lighten(#000, 20%);
+  }
 }
 
 .favorite-button {
@@ -83,14 +122,34 @@ border-color: white;
   background-color: rgb(226,54,54);
   border-radius: 3px;
   margin-top: 15px;
-  border-color: white;
+  border: none;
 }
 
 .favorites-div {
-  border-style: groove;
+  /*display: none;*/
+  /*border-style: groove;
+  border-color: rgb(226,54,54);*/
   height: 300px;
-  width: 300px;
-  float:right;
+  width: 160px;
+  float: right;
+  margin-top: 160px;
+  margin-right: 75px;
+}
+
+.favorites-text {
+  color: rgb(226,54,54);
+  font-size: 14px;
+  text-align: center;
+}
+
+.hero-info {
+  size:;
+  img:;
+}
+
+.hero-description {
+  color: black;
+  font-size: 8px;
 }
 
 /*.button-wrapper {
@@ -108,34 +167,18 @@ border-color: white;
   width: 30px;
 }*/
 
-.sign-up-form {
-  text-align: center;
-  margin: 100px auto;
-  flex-grow: 1;
-  width: 25%;
-  height: 15px;
-}
-
-.log-in-form {
-  text-align: center;
-  margin: 100px auto;
-  flex-grow: 1;
-  width: 25%;
+#heroes {
+  width: 75%;
   height: 15px;
 }
 
 .search-hero-form {
   text-align: center;
-    margin: 100px auto;
-    flex-grow: 1;
-    width: 25%;
-    height: 15px;
-}
-
-
-img {
-  height: 250px;
-  width: 250px;
-  border-radius: 3px;
-  box-shadow: 1px 1px grey;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-bottom: 80px;
+  margin-right: auto;
+  flex-grow: 1;
+  width: 25%;
+  height: 15px;
 }

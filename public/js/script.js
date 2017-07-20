@@ -15,10 +15,10 @@ const getData = (name) => {
   axios.get('/api/marvel?name='+name)
   .then(data => {
     console.log(data)
-    console.log($('.sidebar').children());
-    $('.sidebar').children().each(function(){$(this).remove()})
-    $('.sidebar').append($('<h1 class="hero-name">').text(data.data[0].name))
-    .append($('<img>').attr('src', data.data[0].thumbnail.path + "." + data.data[0].thumbnail.extension ))
+    console.log($('.hero-info').children());
+    $('.hero-info').children().each(function(){$(this).remove()})
+    $('.hero-info').append($('<h1 class="hero-name">').text(data.data[0].name)).append($('<p class="hero-description">').text(data.data[0].description))
+    .append($('<img class="hero-img">').attr('src', data.data[0].thumbnail.path + "." + data.data[0].thumbnail.extension ))
 })
 .catch((err) => {
   console.log(err);
