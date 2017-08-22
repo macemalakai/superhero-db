@@ -5,7 +5,7 @@
 
 
 
-const getData = (name) => {
+  const getData = (name) => {
   let heroes = $('#heroes').val();
 
   const API_KEY = "acbfb7845bbc28b8014a8bdc6f96ee68";
