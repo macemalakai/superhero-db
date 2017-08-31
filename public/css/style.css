@@ -1,9 +1,9 @@
-@font-face {
+/*@font-face {
     font-family: 'the-avengers';
     src: url('../../vendor/The Avengers.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
+  }*/
 
 body {
   background: url("http://i.imgur.com/muQ9b2O.jpg") no-repeat center center fixed;

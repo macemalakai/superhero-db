@@ -20,12 +20,12 @@ Hero.findByHeroId = (userId, heroId) => {
 
 Hero.create = (hero) => {
   // Hero info is already created at this point, via the body
-  return db.one(`
+  return db.oneOrMany(`
     INSERT INTO heroes
-    (name, description, thumbnail, comics)
-    VALUES ($1, $2, $3, $4)
+    (name, description, thumbnail,)
+    VALUES ($1, $2, $3,)
     RETURNING *
-  `) [hero.name, hero.description, hero.thumbnail, hero.comics];
+  `) [hero.name, hero.description, hero.thumbnail];
 }
 
 
