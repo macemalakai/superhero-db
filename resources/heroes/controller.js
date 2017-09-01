@@ -18,8 +18,19 @@ controller.show = (req, res) => {
   })
   .catch((err) => {
     console.log(err);
-  })
+  });
 
+}
+
+controller.new = (req, res) => {
+  Hero
+  .create(req.body.hero)
+  .then(() => {
+    res.render('users/signup')
+  })
+  .catch((err) => {
+    res.json(err);
+  });
 }
 
 

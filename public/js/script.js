@@ -21,7 +21,7 @@
     if (data.data[0].description) {
       $('.hero-info').append($('<p class="hero-description">').text(data.data[0].description))
     } else {
-    $('.hero-info').append($('<p class="hero-description">').text("No description yet available. Check back later for more information on this superhero!"))
+        $('.hero-info').append($('<p class="hero-description">').text("No description yet available. Check back later for more information on this superhero!"))
   }
       $('.hero-info').append($('<img class="hero-img">').attr('src', data.data[0].thumbnail.path + "." + data.data[0].thumbnail.extension ));
 
@@ -33,6 +33,10 @@
 })
 }
 
+
+const favoriteHero () => {
+
+}
 
 
 
