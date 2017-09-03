@@ -33,6 +33,21 @@ controller.new = (req, res) => {
   });
 }
 
+controller.test = ((req,res) => {
+  console.log("Sup");
+});
+
+
+
+  // .create(req.body.hero)
+  // .then(() => {
+  //   res.render('heroes/test')
+  // })
+  // .catch((err) => {
+  //   res.json(err);
+  // });
+// }
+
 
 
 

@@ -34,7 +34,7 @@
 }
 
 
-const favoriteHero () => {
+const favoriteHero = () => {
 
 }
 

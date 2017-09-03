@@ -4,8 +4,10 @@ const controller = require('./controller');
 
 // var app = express();
 
+router.post('/heroes/test', controller.test)
 router.get('/', controller.index)
 router.get('/user_id/:hero_id', controller.show)
+
 
 
 module.exports = router;
