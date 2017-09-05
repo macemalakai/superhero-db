@@ -1,4 +1,4 @@
-const Hero = require('./../../models/hero')
+const Hero = require('../../models/hero')
 const controller = {}
 
 
@@ -10,6 +10,12 @@ controller.index = (req, res) => {
     res.render('heroes/hero')
   })
 }
+
+
+controller.test = ((req,res) => {
+  console.log("QOhaosdhif");
+})
+
 
 controller.show = (req, res) => {
   User.findByHeroId(req.session.user_id, req.params.hero_id)
@@ -33,9 +39,7 @@ controller.new = (req, res) => {
   });
 }
 
-controller.test = ((req,res) => {
-  console.log("Sup");
-});
+
 
 
 
@@ -51,4 +55,4 @@ controller.test = ((req,res) => {
 
 
 
-module.exports = controller
+module.exports = controller;
